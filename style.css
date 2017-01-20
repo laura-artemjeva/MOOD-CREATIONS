@@ -2,19 +2,19 @@
 
 *::-webkit-input-placeholder {
     color: rgba(255,255,255,0.7);
-}
+	}
 *:-moz-placeholder {
     /* FF 4-18 */
     color: rgba(255,255,255,0.7);
-}
+	}
 *::-moz-placeholder {
     /* FF 19+ */
     color: rgba(255,255,255,0.7);
-}
+	}
 *:-ms-input-placeholder {
     /* IE 10+ */
     color: rgba(255,255,255,0.7);
-}
+	}
 
 body {
 	margin: 0;
@@ -23,391 +23,483 @@ body {
 	color: #fff;
 	text-align: center;
 }
- 
+
+.section-red,
+.section-green-bg,
+.section-taupe-bg,
+.section-green,
+.section-blue-bg {
+	padding-top: 114px;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
-}
-
+	}
+	
 h2, h3, h4, p {
 	margin:0;
-}
+	}
 
 h2, h3, button, thead, .signup, input[type="submit"] {
 	text-transform: uppercase;
-}
+	}
 
 h2 {
 	font-size: 30px;
 	font-weight: 400;
-	padding: 114px 0 65px 0;
-}
+	padding: 0 0 65px 0;
+	}
 
-h3 {
-	font-size: 16px;
-	font-weight: 700;
-	padding: 20px 0 37px 0;
-}
-
-p{
+.mood-description,
+.portfolio-description,
+.team-description {
 	font-size: 20px;
 	font-weight: 300;
-}
+	}
+	
+.portfolio-description,
+.team-description {
+	line-height: 30px;
+	}
+
 button,
 input,
 textarea {
 	outline: 0;
-}
+	}
+
 button {
 	cursor: pointer;
-}
+	}
 
 .wrapper {
 	max-width: 1110px;
 	margin: 0 auto;
-}
+	}
 
 
+/*HEADER*/
 header {
 	background: rgba(211,53,35,0.9);
 	position: fixed;
 	width: 100%;
 	font-size: 14px;
-}
+	}
+
 	.header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-	}
-	
-		.nav, .minilogo {
-			display: inline-block;
-		}	
-	
+		}
+
+		.minilogo a {
+			display: block;
+			}
+
 			.minilogo img, .minilogo span {
 				vertical-align: middle;
-			}
-			.minilogo a {
-				   display: block;
-			}
-		
-			.nav a {
-				display: inline-block;
-				padding: 27px 10px 25px 10px;
-				border-top: 5px solid transparent;
-			}
-				.nav a:hover {
-					border-top-color: rgba(255,255,255, 0.6);
 				}
 
-#mc {
+		.nav a {
+			display: inline-block;
+			padding: 27px 10px 25px 10px;
+			border-top: 5px solid transparent;
+			}
+
+			.nav a:hover {
+				border-top-color: rgba(255,255,255, 0.6);
+				}
+
+
+/*MOOD CREATIONS*/
+.section-red-bg {
 	background: url("img/bg-red.svg");
 	background-size: cover;
-}
+	background-position: center;
+	}
 
 	.mood {
 		max-width: 910px;
 		margin: 0 auto;
-	}
+		}
+
 		.mood img {
 			display: block;
 			width: 100%;
 			padding: 234px 0 54px 0;
-		}
-		.mood p {
+			}
+
+		 .mood-description {
 	    	line-height: 32px;
-		}	
-				
+			}	
+
 		.social {
 			padding: 46px 0 67px 0;
-		}	
-			
+			}	
+
 			.social a {
 				color: rgba(255,255,255,0.5);
 				font-size: 23px;
 				padding: 0 10px;
-			}
+				}
 				.social a:hover {
 					color: rgb(255,255,255);
-				}
+					}
 
-#services {
+
+/*SERVICES*/
+.section-red {
 	background: rgb(211,53,35);
-}
+	}
 
 	.services {
 		display: flex;
 		padding-bottom: 77px;
-	}
-	
+		}
+
 	.service-content {
 		display: inline-block;
 		flex: 1;
-	}
+		line-height: 24px;
+		}
+
+		.service-name {
+			font-size: 16px;
+			font-weight: 700;
+			padding: 20px 0 37px 0;
+			}
+
+		.service-description {
+			font-size: 15px;
+			font-weight: 300;
+			padding: 0 20px;
+			}
 
 
+/*PORTFOLIO*/
 .portfolio-content {
 	background: url("img/bg-green.svg");
 	background-size: cover;
-}
-	.selection {
-		margin-top: 40px;
+	background-position: center;
+	overflow: auto;
 	}
-	
-	.active {
-		border-color: white;
-	}
-	
-	button {
-		padding: 10px 15px;
-		border: 1px solid transparent;
-		border-radius: 6px;
-		background: transparent;
-		color: #fff;
-	}
-		button.dot {
-			background: transparent;
-			display: inline-block;
-		    width: 8px;
-		    height: 8px;
-		    border: 1px solid rgba(255,255,255,0.2);
-		    border-radius: 50%;
-		    padding: 0;	
-		    margin: 41px 7px 31px 7px;
+
+	.portfolio-description,
+	.team-description {
+		padding: 0 75px 0 75px;
+		line-height: 30px;
+		font: 20px;
+		font-weight: 300;
 		}
 
-		button.dot.active-slider {
-			background: #fff;
+		.selection {
+			margin-top: 40px;
+			}
 
-		}
+			button {
+				padding: 10px 15px;
+				margin: 0 25px 0 25px;
+				border: 1px solid transparent;
+				border-radius: 6px;
+				background: transparent;
+				color: #fff;
+				}	
 
-.portfolio-photos {
-	display: flex;
-	flex-wrap: wrap;
-}
+				.button-active,
+				button:hover {
+					border-color: white;
+					}
 
+				button.dot {
+					background: transparent;
+					display: inline-block;
+				    width: 8px;
+				    height: 8px;
+				    border: 1px solid rgba(255,255,255,0.2);
+				    border-radius: 50%;
+				    padding: 0;	
+				    margin: 0 7px 0 7px;
+					}
+
+				button.dot.dot-active,
+				button.dot:hover {
+					background: #fff;
+					}
+
+
+/*PORTFOLIO PHOTOS*/
 	.works {
 		float: left;
 		width: 25%;
-	}
-	
-	.portfolio-background {
 		background-size: cover;
-	}
-	
-	
-	.img-hover {
-		display: block;
-		height: 300px;
-		visibility: hidden;
-		background-color: rgba(121,187,134,0.8);
-		text-align: center;
-		font: inherit;
-		font-size: 14px;
-	}
-		.img-hover img {
-			padding-top: 92px;
+		background-position: center;
 		}
-		
-		.img-hover h4 {
-			padding: 36px 0 13px 0;
-			font-size: 18px;
-		}		
-		.img-hover span {
+
+		.works-hover {
+			display: block;
+			height:208px;
+			visibility: hidden;
+			background-color: rgba(121,187,134,0.8);
+			text-align: center;
 			font-size: 14px;
-			font-weight: 300;
-		}		
-			div:hover > .img-hover {
-				visibility: visible;
+			padding: 92px 5px 0 5px;
 			}
-#pricelist h2 {
-	padding-bottom: 25px;
-}	
-	
-.pricelist-content {
-	background: url("img/blue-green.png");
-	background-size: cover;
-	overflow:auto;
-}	
-	#pricelist .selection {
-		margin-bottom: 40px;
-	}
-	
+
+			 .icon-circle {
+				display: block;
+				margin: 0 auto;
+				}
+
+			.work-title {
+				padding: 36px 0 13px 0;
+				font-size: 18px;
+				display: block;
+				}
+
+			.work-description {
+				font-size: 14px;
+				font-weight: 300;
+				display: block;
+				}	
+
+				.works:hover > .works-hover {
+					visibility: visible;
+					}
+
+
+/*PRICELIST*/
+.section-taupe-bg {
+	clear: both;
+}
+
+	.pricelist-content {
+		background: url("img/blue-green.png");
+		background-size: cover;
+		overflow:auto;
+		background-position: center;
+		}
+
+		.section-taupe-bg h2 {
+			padding-bottom: 25px;
+			}	
+
+		.section-taupe-bg .selection {
+			margin-bottom: 40px;
+			}
+
+
+/*PRICELIST TABLE*/	
 	.pricelist-table {
 		background: rgb(42,87,89);
-	}
+		}
 
 		table {
 			width: 100%;
 			font-weight: 300;
-		}
-			th{
+			border-collapse: collapse;
+			}
+
+			th {
 				padding: 45px 0 18px 0;
 				font-size: 15px;
 				font-weight: 400;
-			}
+				}
 
 			td {
 				padding: 18px 0;
 				border-top: 1px solid #437c7e;
 				color: #a2d5d7;
-			}
-
-			tr:last-child td {
-				padding-bottom: 80px;
-			}
-			
-			.price td {
-				font-size: 22px;
-				font-weight: 400;
-			}
-			
-				.signup td, .price td {
-					color: white;
 				}
-				
+
+				tr:last-child td {
+					padding-bottom: 80px;
+					}
+
+				.pro {
+					background-color: rgb(49,103,105);
+					}
+
+					td.pro a {
+						border-color: #71b2b4;
+						}
+
+				.price td {
+					font-size: 22px;
+					font-weight: 400;
+					}
+
+				.price td,
+				.signup td {
+					color: white;
+					}
+
 				.signup td {
 					padding-top: 29px;
-				}
-				
+					}
+
 				.signup td a {
 					padding: 13px 39px;
 					border: 1px solid #fff;
 					border-radius: 5px;
-				}
-	
-				.pro {
-					background-color: rgb(49,103,105);
 					}
-	
-					.signup .pro a {
+
+					.signup td a:hover {
+						background-color: rgb(49,103,105);
+						border-color: #71b2b4;
+						}
+
+					.signup .pro a:hover {
 						background-color: rgb(71,133,135);
 						border-color: #71b2b4;
-							}
+						}
 
 
-#team {
+/*TEAM*/
+.section-green {
 	background: #57aa68;
-}
-
-	#team p, #portfolio p {
-		padding: 0 75px 0 75px;
+	padding-bottom: 80px;
 	}
- 	.team-pictures {
+
+	.slider-buttons {
+		margin: 41px 0 31px 0;
+		}
+
+ 	.team-info {
 		display: flex;
 		justify-content: space-between;
-	}
-		.team-image {
-			background-size: cover;
-			height: 290px;
 		}
-			.img-hover2 {
-				width: 260px;
-				height: 290px;
+
+		.employee-image {
+			background-size: cover;
+			background-position: center;
+			}
+
+			.employee-hover {
 				visibility: hidden;
+				max-width: 212px;
 				background-color: rgba(121,187,134,0.8);
 				text-align: center;
 				font: inherit;
-				font-size: 14px;	
-			}
-				.img-hover2 h4 {
+				font-size: 14px;
+				padding: 26px 24px 32px 24px;		
+				}
+
+				.employee-hover h4 {
 					margin: 0;
-					padding: 26px 10px 0 10px;
+					padding-bottom: 10px;
 					font-size: 18px;
 					font-weight: 400;
-				}
-			
-					#team .img-hover2 p {
+					line-height: 24px;
+					}
+
+					.employee-hover .employee-description {
 						margin: 0;
-						padding: 13px 24px 64px 24px;
+						padding: 0;
 						font-size: 15px;
 						font-weight: 300;
-					}
-			
-					.img-hover2 a {
-						padding: 9px;
-						background-color: rgba(0,0,0,0.3);
-						height: 22px;
-						width: 22px;
-						font-size: 23px;
-					}
-		
-						#team .team-image:hover .img-hover2 {
-							visibility: visible;
+						line-height: 24px;
 						}
-						
-		.team-pictures span {
-			display: block;
-		}
-		
+
+					 .employee-hover .employee-social {
+						padding-top: 64px;
+						}
+
+						.employee-social a {
+							padding: 9px;
+							background-color: rgba(0,0,0,0.3);
+							height: 22px;
+							width: 22px;
+							font-size: 23px;
+							}
+
+						.employee-image:hover .employee-hover {
+							visibility: visible;
+							}
+
 			.name {
+				display: block;
 				font-size: 18px;
 				font-weight: 400;
-				padding-top: 31px;
-			}
-			
-			.name +span {
+				padding: 31px 0 11px 0;
+				}
+
+			.position {
+				display: block;
 				font-size: 13px;
-				padding: 11px 0 80px 0;
 				font-weight: 400;
 				color: rgba(255,255,255,0.5);
-			}
+				}
 
-#contacts {
+
+/*CONTACTS*/
+.section-blue-bg {
 	background: url("img/blueo.png");
 	background-size: cover;
-}
+	padding-bottom: 76px;
+	background-position: center;
+	}
 
 	form {
 		max-width: 620px;
 		margin: 0 auto;
-	}
-		form input,
-		form textarea {
-			display: block;
-			width: 100%;
-			box-sizing: border-box;
-			border: 0;
-			background: rgba(46,45,107,0.7);
-			border-radius: 4px;
-			margin: 10px 0;
-			padding: 15px 14px;
-			color: white;
-			font-family: inherit;
+		padding: 0 0 33px 0;
 		}
-		form textarea {
-			resize: none;
-			height: 230px;
-		}
-		form input[type="submit"] {
-			background: none;
-			border: 1px solid white;
-			border-radius: 5px;
-			font-size: 16px;
-			cursor: pointer;
-			padding: 10px 0;
-			font-weight: 400;
-		}
-		
-	#contacts span {
-		padding: 46px 0 76px 0;
+
+		.form-row{
+			margin: 0 0 10px 0;
+			}
+
+			.input-name,
+			.input-email,
+			.input-text-area,
+			.input-submit {
+				display: block;
+				width: 100%;
+				box-sizing: border-box;
+				border: 0;
+				background: rgba(46,45,107,0.7);
+				border-radius: 4px;
+				padding: 15px 14px;
+				color: white;
+				font-family: inherit;
+				}
+
+			.input-text-area {
+				resize: none;
+				height: 230px;
+				}
+
+			.input-submit {
+				background: none;
+				border: 1px solid white;
+				border-radius: 5px;
+				font-size: 16px;
+				cursor: pointer;
+				padding: 10px 0;
+				font-weight: 400;
+				}
+
+	.contact-info {
 		font-size: 18px;
 		display: block;
 		font-weight: 300;
-	}
+		}
 
 
-footer {
+/*FOOTER*/
+.section-purple {
 	background: #2e2d6b;
-}
-
-	footer img {
-		width: 100%;
+	padding-bottom:32px;
 	}
-	
-	footer span {
+
+	.map {
+		width: 100%;
+		margin-bottom: 35px;
+		}
+
+	.copyrights {
 		font-size: 13px;
-		padding: 35px 0 32px 0;
 		display: block;
 		color: rgba(255,255,255,0.5);
-	}
+		}
