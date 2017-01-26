@@ -26,7 +26,7 @@ body {
 
 .section-red,
 .section-green-bg,
-.section-taupe-bg,
+.section-teal-bg,
 .section-green,
 .section-blue-bg {
 	padding-top: 114px;
@@ -52,8 +52,7 @@ h2 {
 	}
 
 .mood-description,
-.portfolio-description,
-.team-description {
+.p-description {
 	font-size: 20px;
 	font-weight: 300;
 	}
@@ -178,11 +177,10 @@ header {
 
 
 /*PORTFOLIO*/
-.portfolio-content {
+.section-green-bg {
 	background: url("img/bg-green.svg");
 	background-size: cover;
 	background-position: center;
-	overflow: auto;
 	}
 
 	.portfolio-description,
@@ -206,12 +204,12 @@ header {
 				color: #fff;
 				}	
 
-				.button-active,
+				.selection-active,
 				button:hover {
 					border-color: white;
 					}
 
-				button.dot {
+				.slider-buttons button {
 					background: transparent;
 					display: inline-block;
 				    width: 8px;
@@ -222,18 +220,22 @@ header {
 				    margin: 0 7px 0 7px;
 					}
 
-				button.dot.dot-active,
-				button.dot:hover {
+				button.dot-active,
+				.slider-buttons button:hover {
 					background: #fff;
 					}
 
 
 /*PORTFOLIO PHOTOS*/
+	.portfolio-photos {
+		display: flex;
+		flex-wrap: wrap;
+		}
+	
 	.works {
-		float: left;
-		width: 25%;
 		background-size: cover;
 		background-position: center;
+		width: 25%;
 		}
 
 		.works-hover {
@@ -269,22 +271,18 @@ header {
 
 
 /*PRICELIST*/
-.section-taupe-bg {
-	clear: both;
-}
-
-	.pricelist-content {
+	.section-teal-bg {
 		background: url("img/blue-green.png");
 		background-size: cover;
 		overflow:auto;
 		background-position: center;
 		}
 
-		.section-taupe-bg h2 {
+		.section-teal-bg h2 {
 			padding-bottom: 25px;
 			}	
 
-		.section-taupe-bg .selection {
+		.section-teal-bg .selection {
 			margin-bottom: 40px;
 			}
 
@@ -362,7 +360,7 @@ header {
 	}
 
 	.slider-buttons {
-		margin: 41px 0 31px 0;
+		padding: 41px 0 31px 0;
 		}
 
  	.team-info {
